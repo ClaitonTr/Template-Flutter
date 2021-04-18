@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_template/app/presenter/pages/home_page.dart';
 
 class AppWidget extends StatelessWidget {
   @override
@@ -8,7 +9,9 @@ class AppWidget extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: null,
+      routes: {
+        '/': (context) => HomePage(),
+      },
     );
   }
 }
